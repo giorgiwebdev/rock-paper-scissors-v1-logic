@@ -64,7 +64,11 @@ function clear() {
   computerChoice = "";
   result = "";
 
-  computerChoiceDisplay.textContent = userChoice;
-  userChoiceDisplay.textContent = computerChoice;
+  updateDisplay();
+}
+
+function updateDisplay() {
+  computerChoiceDisplay.textContent = computerChoice;
+  userChoiceDisplay.textContent = userChoice;
   resultDisplay.textContent = result;
 }
